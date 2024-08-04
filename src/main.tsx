@@ -3,14 +3,14 @@ import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 
-import setupGapi from "./setupGapi.ts";
+import { setupYoutubeAPI } from "./helpers/youtubeAPI.ts";
 
-setupGapi()
+setupYoutubeAPI()
   .then(() => {
     console.log("GAPI setup successfull");
     ReactDOM.createRoot(document.getElementById("root")!).render(
       <React.StrictMode>
-        <App isGapiLoaded={true} />
+        <App />
       </React.StrictMode>
     );
   })

@@ -9,10 +9,9 @@
     }
   ],
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
-    },
-    "moduleResolution": "node"
+      "@/*": ["./src/*"]
+    }
   }
 }
