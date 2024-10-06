@@ -1,19 +1,19 @@
 export const COLORS = {
   white: "#FFFFFF",
   offwhite: {
-    100: "FFFDFB",
+    100: "#FFFDFB",
     500: "#F7F5F3",
-    900: "EFECE9",
+    900: "#EFECE9",
   },
   offblack: {
-    100: "52547A",
+    100: "#52547A",
     500: "#33344B",
-    900: "1B1C2E",
+    900: "#1B1C2E",
   },
   lightblue: {
-    100: "EDF5FD",
+    100: "#EDF5FD",
     500: "#D8E6F2",
-    900: "B5CCE0",
+    900: "#B5CCE0",
   },
   secondaryblue: {
     100: "#CEE2FF",
