@@ -50,9 +50,18 @@ table {
 /* DESIGN TOKENS */
 html {
   --color-white: ${COLORS.white};
-  --color-offwhite: ${COLORS.offwhite};
-  --color-offblack: ${COLORS.offblack};
-  --color-lightblue: ${COLORS.lightblue};
+
+  --color-offwhite-100: ${COLORS.offwhite[100]};
+  --color-offwhite-500: ${COLORS.offwhite[500]};
+  --color-offwhite-900: ${COLORS.offwhite[900]};
+
+  --color-offblack-100: ${COLORS.offblack[100]};
+  --color-offblack-500: ${COLORS.offblack[500]};
+  --color-offblack-900: ${COLORS.offblack[900]};
+
+  --color-lightblue-100: ${COLORS.lightblue[100]};
+  --color-lightblue-500: ${COLORS.lightblue[500]};
+  --color-lightblue-900: ${COLORS.lightblue[900]};
 
   --color-secondaryblue-100: ${COLORS.secondaryblue[100]};
   --color-secondaryblue-500: ${COLORS.secondaryblue[500]};
