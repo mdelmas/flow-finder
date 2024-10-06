@@ -56,23 +56,21 @@ const Eyes = () => {
 
   console.log(mousePosition);
   console.log(elementCenter);
-  let eyePosition = { x: 0, y: 0 };
+  let eyeCenterPosition = { x: 0, y: 0 };
   if (mousePosition && elementCenter) {
-    eyePosition = {
-      x: Math.min(Math.max(mousePosition.x - elementCenter.x, -15), 15) / 100,
-      y: Math.min(Math.max(mousePosition.y - elementCenter.y, -30), 30) / 100,
+    eyeCenterPosition = {
+      x:
+        Math.min(Math.max(mousePosition.x - elementCenter.x, -150), 150) / 1000,
+      y:
+        Math.min(Math.max(mousePosition.y - elementCenter.y, -300), 300) / 1000,
     };
-    console.log("vector", eyePosition);
-    // const normalizedDirection = {
-    // x: direction.x
-    // }
-    // console.log(normalizedDirection);
+    console.log("vector", eyeCenterPosition);
   }
 
   return (
     <EyesContainer ref={elementRef}>
-      <Eye position={eyePosition} />
-      <Eye position={eyePosition} />
+      <Eye position={eyeCenterPosition} />
+      <Eye position={eyeCenterPosition} />
     </EyesContainer>
   );
 };
@@ -81,7 +79,7 @@ const EyesContainer = styled.div`
   --border-color: ${BORDER_COLOR};
   --background-color: ${BACKGROUND_COLOR};
 
-  font-size: 64px;
+  font-size: 16px;
 
   display: flex;
   width: max-content;

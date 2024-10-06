@@ -52,7 +52,7 @@ export const fetchYoutubeAPI = (
     .list({
       part: ["snippet"],
       maxResults: 6,
-      q: "yoga|sleep|yin|yin yoga", // search terms : add '|' for OR
+      q: "yoga|adriene", // search terms : add '|' for OR
       relevanceLanguage: "en", // language code ISO 639-1 : "fr", "en"
       type: "video",
       videoDuration: "long", // any, long, medium, short
