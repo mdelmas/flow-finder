@@ -1,5 +1,7 @@
 export const COLORS = {
-  white: "#FFFFFF",
+  white: {
+    500: "#FFFFFF",
+  },
   offwhite: {
     100: "#FFFDFB",
     500: "#F7F5F3",
